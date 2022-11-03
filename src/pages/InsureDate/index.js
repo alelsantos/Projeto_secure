@@ -12,40 +12,14 @@ export default function InsureDate() {
                 {/*-Authentication Default*/}
                 <View id="default" style={styles.Defaultbutton}>
                     <TouchableOpacity style={styles.buttonDefault}>
+                        <Text>po</Text>
                         <TextInput
                             placeholder="Ex: John Miller" placeholderTextColor={'blue'} />
                     </TouchableOpacity>
 
 
-                    <TouchableOpacity style={styles.buttonDefault}>
-                        <TextInput
-                            placeholder="Ex: 123 456 789" placeholderTextColor={'blue'}
-                        >
-                        </TextInput>
-                    </TouchableOpacity>
-
-
+   
                     
-                    <TouchableOpacity style={styles.buttonDefault}>
-                        <TextInput
-                            placeholder="Ex: 123 456 789" placeholderTextColor={'blue'}
-                        >
-                        </TextInput>
-                    </TouchableOpacity>
-
-
-                    <TouchableOpacity style={styles.buttonDefault}>
-                        <TextInput
-                            placeholder="Ex: +1 (000) 000 0000" placeholderTextColor={'blue'}
-                        >
-                        </TextInput>
-                    </TouchableOpacity>
-
-                    <Input id="date" type="date">
-                    
-                    </Input>
-                   
-                   
                 </View>
                
 
@@ -59,15 +33,38 @@ export default function InsureDate() {
                     <Text style={styles.buttonLogin}>SEND</Text>
                 </TouchableOpacity>
 
+
+                  
+            
+
         </View>
     );
 }
 
+
 const styles = StyleSheet.create({
+
+
     container: {
+        maxWidth: 350,
+        maxheight: 50,
+        marginTop: 202,
+        borderColor: '  #D9D9D9'
+
 
     },
 
+    buttonSocial: {
+        Margin: 50,
+        borderWidth: 1,
+        borderColor: 'rgba(0, 0, 0, 1)',
+        borderRadius: 70,
+        color: '#20232a',
+        textAlign: 'center',
+        flexDirection: 'row',
+        paddingBottom: 14
+
+    },
 
     buttonDefault: {
         Margin: 50,
@@ -75,7 +72,75 @@ const styles = StyleSheet.create({
         borderColor: 'rgba(0, 0, 0, 1)',
         borderRadius: 70,
         color: '#20232a',
-        textAlign: 'center'
+        textAlign: 'center',
+        marginTop: 3,
+        marginBottom: 10,
+        lineHeight: 13,
+        marginLeft: 20,
+        flexDirection: 'row',
+        textAlign: 'center',
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+        marginTop: 10,
+        paddingBottom: 14
 
+    },
+
+    buttonSocial: {
+
+        backgroundColor: '#D9D9D9',
+        borderColor: 'rgba(0, 0, 0, 1)',
+        borderRadius: 70,
+        color: '#Gray85',
+        textAlign: 'center',
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+        marginTop: 10,
+        flexDirection: 'row',
+        paddingBottom: 14,
+        marginLeft: 20
+
+
+
+    },
+
+
+    buttonLogin: {
+
+        backgroundColor: '#0074FC',
+        borderColor: 'rgba(0, 0, 0, 1)',
+        borderRadius: 20,
+        color: '#20232a',
+        textAlign: 'center',
+        paddingHorizontal: 20,
+        paddingVertical: 10,
+        fontSize: 20,
+        marginTop: 10,
+        marginLeft: 200,
+        marginBottom: 4,
+        strokeWidth: 123
+    },
+
+    Redefinebutton: {
+        textAlign: 'center',
+        color: '#0074FC'
+    },
+
+    containerForm: {
+        color: '#000000'
+    },
+
+    buttonOr: {
+
+        textAlign: 'center',
+        lineHeight: 40,
+        lineSize: 23,
+        color: '#000000'
+    },
+    buttonAccount: {
+        textAlign: 'center',
+        color: '#0074FC',
+        marginTop: 10
     }
-});
+
+})

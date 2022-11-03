@@ -16,7 +16,7 @@ export default function Welcome() {
     return (
         <View style={styles.container}>
 
-            <Text style={styles.containerForm}> Login with</Text>
+            
             {/*-Authentication Default*/}
             <View id="default" style={styles.inputArea}>
             <Image source={require('../../assets/icon.png')}  style={{marginLeft:16}} />
@@ -61,13 +61,11 @@ export default function Welcome() {
                 <TouchableOpacity
                     style={styles.Loginbutton}
                     onPress={() => navigation.navigate('InsureDate')}>
-                    <Text style={styles.buttonLogin}>LOGIN</Text>
+                    <Text style={styles.buttonLogin}>SEND</Text>
                 </TouchableOpacity>
             </View>
 
-            <TouchableOpacity>
-                <Text style={styles.buttonOr} >__________ or __________</Text>
-            </TouchableOpacity>
+           
 
             {/*-Authentication Apple*/}
             <View id="apple" style={styles.containerForm}>
@@ -89,32 +87,6 @@ export default function Welcome() {
             </View>
 
 
-            {/*-Authentication Facebook*/}
-            <View id="face" style={styles.containerForm}>
-                <TouchableOpacity style={styles.buttonSocial} id="idFace"
-                    placeholder="Email or user" placeholderTextColor={'blue'} onPress={() => navigation.navigate('SignIn')}>
-                    <Image source={require('../../assets/iconFacebook.png')} />
-                    <TextInput placeholder="    Logging with Facebook" />
-                </TouchableOpacity>
-            </View>
-
-
-
-            {/*-Authentication Twitter*/}
-            <View id="face" style={styles.containerForm}>
-                <TouchableOpacity style={styles.buttonSocial} id="idFace"
-                    placeholderTextColor={'blue'} onPress={() => navigation.navigate('SignIn')}>
-                    <Image source={require('../../assets/iconTwitter.png')} />
-                    <TextInput placeholder="    Logging with Twitter" />
-                </TouchableOpacity>
-            </View>
-
-
-            <TouchableOpacity
-                style={styles.button3}
-                onPress={() => navigation.navigate('SignIn')}>
-                <Text style={styles.buttonAccount}>Create an account</Text>
-            </TouchableOpacity>
         </View>
 
 
@@ -131,7 +103,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         maxWidth: 350,
         maxheight: 50,
-        marginTop: 202,
+        
         borderColor: '  #D9D9D9'
 
 
